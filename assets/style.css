@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/*Main Font Settings for Page*/
+body {
+    background: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Font Settings and alignment for Main Header*/
+header {
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+/*Font Size Adjustment for Main Header*/
+h1 {
+  font-size: 350%;
+}
+
+/*Font Size Adjustment for Sub Headers*/
+h2 {
+  font-size: 200%;
+}
+
+/*Alignment for Nav Bar*/
+nav{
+  list-style-type: none;
+  text-align: center;
+}
+
+/*Font Settings Nav Bar*/
+nav a{
+  font-size: 150%;
+  padding: 10px;
+  background: black;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*Cursor Hover Settings Nav Bar*/   
+nav a:hover {
+  color: black;
+  background-color: #fff;
+}
+
+/*Main Alignment Settings for Main Area*/
+main {
+  margin-top: 50px;
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+/*Alignment Settings for About Me Section*/
+.About-Me {
+    align-items: center;
+    text-align: center;
+}
+
+/*Margin Settings for About Me Section*/
+.About-Me p {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+/*Alignment and Margin Settings for Profile Pic*/
+.About-Me img {
+  float: none;
+  max-width: 30%;
+  max-height: 30%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/*Alignment and Margin Settings for About Me Section*/
+.Work {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/*Alignment and Margin Settings for Main Placeholder Image*/
+.Work #Image-1{
+  float: none;
+  width: 70%;
+  padding: 50px;
+}
+
+/*Alignment and Margin Settings for Subsequent Placeholder Images*/
+.Work img {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+/*Cursor Hover Settings Placeholder Images*/
+.Work img:hover{
+  opacity: 0.5;
+}
+
+/*Alignment and Margin Settings for Contact Details Area*/
+.Contact {
+  list-style-type: none;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/*Alignment and Margin Settings for Contact Details Area*/
+.Contact li{
+  display: inline;
+  margin-top: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/*Font Settings for Contact Links*/
+.Contact a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/*Cursor Hover Settings Contact Details*/
+.Contact a:hover{
+  color: black;
+  background-color: #fff;
+}
+
+/*Alignment and Margin Settings for Footer Area*/
+footer {
+  margin-top: 50px;
+  list-style-type: none;
+  text-align: center;
+  align-items: center;
+}
+
+/*Font Settings for Footer Link*/
+footer a{
+  text-decoration: underline;
+  color: #fff;
+  margin-bottom: 0%;
+}
+
+/*Cursor Hover Settings for Back to Top Link*/
+footer a:hover{
+  color: black;
+  background-color: #fff;
+}
+
+/*Alignment and Margin Settings for Certain Elements when Viewport changes size*/
+@media screen and (max-width: 820px){
+
+  /*About Me Paragraph Margin shrinks to allow for text to take up more of viewport for ease of use for viewer*/
+  .About-Me p{
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  /*About Me Profile Pic increases minimum width and height so image is proportioned properly to changed viewport dimensions*/
+  .About-Me img{
+    width: 100%;
+    min-width: 70%;
+    min-height: 70%;
+  }
+
+  /*Main Placeholder Image removes float and decreases minimum scale so image is proportioned properly to changed viewport dimensions when it goes to column flex-direction*/
+  .Work #Image-1{
+    float: none;
+    flex-direction: column;
+    width: 100%;
+    }
+  
+  /*Other Placeholder Images have float removed and flex-direction changed to column to allow ease of use for viewer*/
+  .Work img{
+    float: none;
+    flex-direction: column;
+    width: 100%;
+  }
+}
